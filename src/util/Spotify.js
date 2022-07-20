@@ -8,6 +8,7 @@ const Spotify = {
       return accessToken;
     }
 
+    window.location.href = 'https://jlombard-jamming-spotify.vercel.app/';
     // check for acces token match
     const accessTokenMatch = window.location.href.match(/access_token=([^&]*)/);
     const expiresInMatch = window.location.href.match(/expires_in=([^&]*)/);
