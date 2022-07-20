@@ -1,5 +1,5 @@
 const clientId = '92390ea4b861492a879f36ce8c1b27bf';
-const redirectUri = 'http://localhost:3000/';
+const redirectUri = 'https://jlombard-jamming-spotify.vercel.app/';
 let accessToken;
 
 const Spotify = {
@@ -8,7 +8,6 @@ const Spotify = {
       return accessToken;
     }
 
-    window.location.href = 'https://jlombard-jamming-spotify.vercel.app/';
     // check for acces token match
     const accessTokenMatch = window.location.href.match(/access_token=([^&]*)/);
     const expiresInMatch = window.location.href.match(/expires_in=([^&]*)/);
